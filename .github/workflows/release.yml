@@ -2,7 +2,9 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - alpha
+      - beta
+      - "*.x" # maintenance releases branches
 jobs:
   release:
     name: Release
